@@ -7,8 +7,8 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/estilos.css">
         <link rel="stylesheet" href="./css/flexbox.css">
@@ -46,107 +46,130 @@
         </nav>
     </header>
 
-    <aside>
+    <aside class="menu__container">
         <nav class="lateral__menus">
-            <ul class="menu__principal">
+            <ul class="menu__lista menu__principal">
                 <li class="menu__item menu-principal__item">
                     <a href="#" class="menu__item-link menu-principal__item-link menu-principal__item-inicio">
-                        <img src="./img/sidebar/home.png" alt="Item Início do Menu Principal"> Início
+                        <i class="meu__item-icone icone__inicio"></i>
+                        <span>Início</span>
                     </a>
                 </li>
                 <li class="menu__item menu-principal__item">
                     <a href="#" class="menu__item-link menu-principal__item-link menu-principal__item-explorar">
-                        <img src="./img/sidebar/explore.png" alt="Item Explorar do Menu Principal"> Explorar
+                        <i class="meu__item-icone icone__explorar"></i>
+                        <span>Explorar</span>
                     </a>
                 </li>
                 <li class="menu__item menu-principal__item">
                     <a href="#" class="menu__item-link menu-principal__item-link menu-principal__item-shorts">
-                        <img src="./img/sidebar/airplay.png" alt="Item Shorts do Menu Principal"> Shorts
+                        <i class="meu__item-icone icone__shorts"></i>
+                        <span>Shorts</span>
                     </a>
                 </li>
                 <li class="menu__item menu-principal__item">
                     <a href="#" class="menu__item-link menu-principal__item-link menu-principal__item-inscricoes">
-                        <img src="./img/sidebar/subscriptions.png" alt="Item Inscrições do Menu Principal"> Inscrições
+                        <i class="meu__item-icone icone__inscricoes"></i>
+                        <span>Inscrições</span>
                     </a>
                 </li>
             </ul>
             <hr>
-            <ul class="menu__biblioteca">
+            <ul class="menu__lista menu__biblioteca">
                 <li class="menu__item menu-biblioteca__item">
                     <a href="#" class="menu__item-link menu-biblioteca__item-link menu-biblioteca__item-biblioteca">
-                        <img src="./img/sidebar/video_library.png" alt="Item Biblioteca do Menu Biblioteca"> Biblioteca
+                        <i class="meu__item-icone icone__biblioteca"></i>
+                        <span>Biblioteca</span>
                     </a>
                 </li>
                 <li class="menu__item menu-biblioteca__item">
                     <a href="#" class="menu__item-link menu-biblioteca__item-link menu-biblioteca__item-historico">
-                        <img src="./img/sidebar/history.png" alt="Item Histórico do Menu Biblioteca"> Histórico
+                        <i class="meu__item-icone icone__historico"></i>
+                        <span>Histórico</span>
                     </a>
                 </li>
                 <li class="menu__item menu-biblioteca__item">
                     <a href="#" class="menu__item-link menu-biblioteca__item-link menu-biblioteca__item-mais-tarde">
-                        <img src="./img/sidebar/history_toggle_off.png" alt="Item Assistir mais tarde do Menu Biblioteca"> Assistir mais tarde
+                        <i class="meu__item-icone icone__relogio"></i>
+                        <span>Assistir mais tarde</span>
                     </a>
                 </li>
                 <li class="menu__item menu-biblioteca__item">
                     <a href="#" class="menu__item-link menu-biblioteca__item-link menu-biblioteca__item-com-like">
-                        <img src="./img/sidebar/thumb_up_alt.png" alt="Item Marcados com like do Menu Biblioteca"> Marcados com like
+                        <i class="meu__item-icone icone__like"></i>
+                        <span>Marcados com like</span>
                     </a>
                 </li>
             </ul>
             <hr>
-            <ul class="menu__inscricoes">
+            <ul class="menu__lista menu__inscricoes">
+                <h3>INSCRIÇÕES</h3>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-alura">
-                        <img src="./img/sidebar/Avatar_Alura.png" alt="Item Alura do Menu Inscrições"> Alura
+                        <i class="meu__item-icone icone__alura"></i>
+                        <span>Alura</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-historico">
-                        <img src="./img/sidebar/Avatar_Gaveta.png" alt="Item Gaveta do Menu Inscrições"> Gaveta
+                        <i class="meu__item-icone icone__gaveta"></i>
+                        <span>Gaveta</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-mais-tarde">
-                        <img src="./img/sidebar/Avatar_Rafa.png" alt="Item Rafaella Ballerini do Menu Inscrições"> Rafaella Ballerini
+                        <i class="meu__item-icone icone__ballerini"></i>
+                        <span>Rafaella Ballerini</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-com-like">
-                        <img src="./img/sidebar/Avatar_Atila.png" alt="Item Atila Iamarino do Menu Inscrições"> Atila Iamarino
+                        <i class="meu__item-icone icone__iamarino"></i>
+                        <span>Atila Iamarino</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-historico">
-                        <img src="./img/sidebar/Avatar_Souto.png" alt="Item Mario Souto do Menu Inscrições"> Mario Souto
+                        <i class="meu__item-icone icone__souto"></i>
+                        <span>Mario Souto</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-mais-tarde">
-                        <img src="./img/sidebar/Avatar_Jovem_Nerd.png" alt="Item Jovem Nerd do Menu Inscrições"> Jovem Nerd
+                        <i class="meu__item-icone icone__nerd"></i>
+                        <span>Jovem Nerd</span>
                     </a>
                 </li>
                 <li class="menu__item menu-inscricoes__item">
                     <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-com-like">
-                        <img src="./img/sidebar/Avatar_Deschamps.png" alt="Item Felipe Deschamps do Menu Inscrições"> Felipe Deschamps
+                        <i class="meu__item-icone icone__deschamps"></i>
+                        <span>Felipe Deschamps</span>
                     </a>
                 </li>
-                <a href="#"><img src="./img/sidebar/keyboard_arrow_down.png" alt="">Mostrar mais 2</a>
+                <a href="#" class="menu__item-link menu-inscricoes__item-link menu-inscricoes__item-mostrar-mais">
+                    <i class="meu__item-icone icone__mostrar"></i>
+                    <span>Mostrar mais 2</span>
+                </a>
             </ul>
             <hr>
-            <ul class="menu__pagina">
+            <ul class="menu__lista menu__pagina">
+                <h3>MAIS DA PÁGINA</h3>
                 <li class="menu__item menu-pagina__item">
                     <a href="#" class="menu__item-link menu-pagina__item-link menu-pagina__item-premium">
-                        <img src="./img/sidebar/ondemand_video.png" alt="Item Vídeos Premium do Menu Página"> Vídeos Premium
+                        <i class="meu__item-icone icone__videos"></i>
+                        <span>Vídeos Premium</span>
                     </a>
                 </li>
                 <li class="menu__item menu-pagina__item">
                     <a href="#" class="menu__item-link menu-pagina__item-link menu-pagina__item-filmes">
-                        <img src="./img/sidebar/movie.png" alt="Item Filmes do Menu Página"> Filmes
+                        <i class="meu__item-icone icone__filmes"></i>
+                        <span>Filmes</span>
                     </a>
                 </li>
                 <li class="menu__item menu-pagina__item">
                     <a href="#" class="menu__item-link menu-pagina__item-link menu-pagina__item-jogos">
-                        <img src="./img/sidebar/sports_esports.png" alt="Item Jogos do Menu Página"> Jogos
+                        <i class="meu__item-icone icone__jogos"></i>
+                        <span>Jogos</span>
                     </a>
                 </li>
             </ul>
