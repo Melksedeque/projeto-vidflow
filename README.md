@@ -34,13 +34,13 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 ## Prints do Projeto
 
 ### Tela Principal (Foco)
-![Tela Principal (Foco)](/screenshots/foco-desktop.png)
+<!-- ![Tela Principal (Foco)](/screenshots/foco-desktop.png) -->
 
 ### Tela Descanso Curto
-![Tela de Descanso Curto](/screenshots/descanso-curto-desktop.png)
+<!-- ![Tela de Descanso Curto](/screenshots/descanso-curto-desktop.png) -->
 
 ### Tela Descanso Longo
-![Tela de Descanso Longo](/screenshots/descanso-longo-desktop.png)
+<!-- ![Tela de Descanso Longo](/screenshots/descanso-longo-desktop.png) -->
 
 ## Autor
 - GitHub - [Melksedeque Silva](https://github.com/Melksedeque/)
