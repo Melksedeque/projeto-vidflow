@@ -6,9 +6,6 @@ async function buscarEMostrarVideos() {
         const videos = await busca.json()
 
         videos.forEach((video) => {
-            if(video.categoria == "") {
-                throw new Error("Vídeo sem categoria!");
-            }
             containerVideos.innerHTML += `
                 <li class="videos__item">
                     <iframe src="${video.url}" title="${video.titulo}" frameborder="0" allowfullscreen></iframe>
