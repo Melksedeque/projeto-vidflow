@@ -50,7 +50,10 @@ function filtrarPesquisa() {
  */
 btnCategoria.forEach((botao) => {
     const nomeCategoria = botao.getAttribute("name")
-    botao.addEventListener("click", () => filtrarPorCategoria(nomeCategoria))
+    botao.addEventListener("click", () => {
+        filtrarPorCategoria(nomeCategoria)
+        definirBotaoAtivo(botao)
+    })
 })
 function filtrarPorCategoria(filtro) {
     const videos = document.querySelectorAll(".videos__item")
@@ -60,4 +63,13 @@ function filtrarPorCategoria(filtro) {
         const categoria = video.querySelector(".categoria").textContent.toLowerCase()
         video.style.display = categoriaTodos || categoria.includes(filtro.toLowerCase()) ? "block" : "none"
     })
+}
+function definirBotaoAtivo(categoria) {
+    let categoriaAtiva = document.querySelector(".superior__item.ativo")
+
+    if(categoriaAtiva) {
+        categoriaAtiva.classList.remove("ativo")
+    }
+    categoria.classList.add("ativo")
+    categoriaAtiva = botao
 }
