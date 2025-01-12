@@ -1,4 +1,6 @@
 const containerVideos = document.querySelector(".videos__container")
+const barraDePesquisa = document.querySelector(".pesquisar__input")
+const btnCategoria = document.querySelectorAll(".superior__item")
 
 async function buscarEMostrarVideos() {
     try {
@@ -16,6 +18,7 @@ async function buscarEMostrarVideos() {
                         <img class="img-canal" src="${video.imagem}">
                         <h3 class="titulo-video">${video.titulo}</h3>
                         <p class="titulo-canal">${video.descricao}</p>
+                        <p class="categoria" hidden>${video.categoria}</p>
                     </div>
                 </li>
             `
@@ -28,10 +31,10 @@ async function buscarEMostrarVideos() {
 
 buscarEMostrarVideos()
 
-const barraDePesquisa = document.querySelector(".pesquisar__input")
-
+/**
+ * Filtrar Vídeos pela Barra de Pesquisa
+ */
 barraDePesquisa.addEventListener("input", filtrarPesquisa)
-
 function filtrarPesquisa() {
     const videos = document.querySelectorAll(".videos__item")
     let valorFiltro = barraDePesquisa.value.toLowerCase()
