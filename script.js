@@ -71,5 +71,4 @@ function definirBotaoAtivo(categoria) {
         categoriaAtiva.classList.remove("ativo")
     }
     categoria.classList.add("ativo")
-    categoriaAtiva = botao
 }
