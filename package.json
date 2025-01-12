@@ -1,0 +1,33 @@
+{
+  "name": "projeto-vidflow",
+  "version": "1.0.0",
+  "description": "O VidFlow é uma plataforma de compartilhamento de vídeos que permite aos usuários pesquisar, filtrar e assistir a diversos conteúdos em diferentes categorias.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melksedeque/projeto-vidflow.git"
+  },
+  "keywords": [
+    "projeto",
+    "vidflow",
+    "alura",
+    "javascript",
+    "js",
+    "api",
+    "node"
+  ],
+  "author": "Melksedeque Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Melksedeque/projeto-vidflow/issues"
+  },
+  "homepage": "https://github.com/Melksedeque/projeto-vidflow#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0"
+  }
+}
