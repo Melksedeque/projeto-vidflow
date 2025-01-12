@@ -1,9 +1,9 @@
 # Projeto VidFlow - Plataforma de Vídeos
+![Tela Principal](./screenshot/tela-principal.png)
 
 ## Menu
 - [Layout](#layout)
 - [Descrição](#descrição)
-- [Screenshots](#screenshot)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#funcionalidades)
 - [Como Instalar e Rodar o Projeto](#como-instalar-e-rodar-o-projeto)
@@ -17,10 +17,6 @@
 ## Descrição
 
 O VidFlow é uma plataforma de compartilhamento de vídeos que permite aos usuários pesquisar, filtrar e assistir a diversos conteúdos em diferentes categorias. Com uma interface intuitiva e recursos avançados de filtragem, o VidFlow oferece uma experiência de visualização personalizada e eficiente.
-
-## Screenshot
-
-![Tela Principal](./screenshot/tela-principal.png)
 
 ## Tecnologias Utilizadas
 
