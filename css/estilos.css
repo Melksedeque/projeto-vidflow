@@ -269,6 +269,12 @@ body {
     transition: .5s;
 }
 
+.superior__item.ativo {
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+    transition: .5s;
+}
+
 .superior__slider{
     position: absolute;
     right: 0%;
