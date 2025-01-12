@@ -142,6 +142,10 @@
     overflow: scroll;
   }
 
+  .lateral__menus {
+    padding: 0 20px 0 15px;
+  }
+
   .menu__lista:nth-child(2),
   .menu__lista:nth-child(3),
   .menu__lista:nth-child(4) {
@@ -150,7 +154,7 @@
 
   .menu__lista {
     height: auto;
-    padding: 20px 17px 20px 15px;
+    padding: 20px 10px;
     gap: 15px;
   }
 
@@ -159,10 +163,6 @@
     gap: 15px;
     align-items: center;
   }
-
-  /* .menu__lista:nth-child(3) {
-    flex-direction: column-reverse;
-  } */
 
   .menu-pagina__item-jogos {
     order: 3;
