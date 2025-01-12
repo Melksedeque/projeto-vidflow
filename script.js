@@ -38,9 +38,32 @@ barraDePesquisa.addEventListener("input", filtrarPesquisa)
 function filtrarPesquisa() {
     const videos = document.querySelectorAll(".videos__item")
     let valorFiltro = barraDePesquisa.value.toLowerCase()
-
+    
     videos.forEach((video) => {
         const titulo = video.querySelector(".titulo-video").textContent.toLowerCase()
         video.style.display = titulo.includes(valorFiltro) ? "block" : "none"
     })
+}
+
+
+/**
+ * Filtrar Vídeos pelo Botão da respectiva Categoria
+ */
+btnCategoria.forEach((botao) => {
+    const nomeCategoria = botao.getAttribute("name")
+    botao.addEventListener("click", () => filtrarPorCategoria(nomeCategoria))
+})
+function filtrarPorCategoria(filtro) {
+    const videos = document.querySelectorAll(".videos__item")
+    for(let video of videos) {
+        let categoria = video.querySelector(".categoria").textContent.toLowerCase()
+        let valorFiltro = filtro.toLowerCase()
+
+        if(!categoria.includes(valorFiltro) && valorFiltro != "tudo") {
+            video.style.display = "none"
+        }
+        else {
+            video.style.display = "block"
+        }
+    }
 }
