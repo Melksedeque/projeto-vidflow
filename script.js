@@ -45,7 +45,6 @@ function filtrarPesquisa() {
     })
 }
 
-
 /**
  * Filtrar Vídeos pelo Botão da respectiva Categoria
  */
