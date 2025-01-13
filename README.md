@@ -96,8 +96,12 @@ projeto-vidflow/
 │   └── VidFlow--Logo-light-mode.png
 ├── screenshots/
 │   └── tela-principal.png
+├── .gitignore
+├── eslint.config.mjs
 ├── index.html
 ├── LICENSE
+├── package.json
+├── package-lock.json
 ├── README.md
 └── script.js
 ```
@@ -111,3 +115,5 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 - FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
 - Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk)
 - LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
+
+*Este projeto foi continuado usando Vite em outro repositório: [Projeto VidFlow com Vite](https://github.com/Melksedeque/projeto-vidflow-vite)*
