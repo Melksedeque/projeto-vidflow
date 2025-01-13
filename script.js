@@ -4,8 +4,8 @@ const btnCategoria = document.querySelectorAll(".superior__item");
 
 async function buscarEMostrarVideos() {
   try {
-    const busca = await fetch("http://localhost:3000/videos");
-    const videos = await busca.json();
+    const busca = await axios.get("http://localhost:3000/videos");
+    const videos = busca.data;
 
     videos.forEach((video) => {
       if (video.categoria == "") {
